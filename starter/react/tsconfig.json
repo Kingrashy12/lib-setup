@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    "composite": true,
+    /* Language and Environment */
+    "target": "ESNext",
+    // "lib": [],
+    "jsx": "preserve",
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "rootDir": "src",
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
