@@ -3,13 +3,13 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { spinner } from "@clack/prompts";
 import chalk from "chalk";
-import { logger } from "./logger";
+import { logger } from "./logger.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const config = JSON.parse(
-  readFileSync(path.resolve(__dirname, "url.json"), "utf-8")
+  readFileSync(path.resolve(__dirname, "template.json"), "utf-8")
 );
 
 const Spinner = spinner();

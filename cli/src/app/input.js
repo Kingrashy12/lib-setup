@@ -1,4 +1,4 @@
-import { log, select, spinner } from "@clack/prompts";
+import { cancel, isCancel, log, select, spinner, text } from "@clack/prompts";
 import "./global.js";
 import { fetchFiles } from "./fetch-template.js";
 import { createFile, createPath, createRootPath, folders } from "./file.js";
@@ -72,7 +72,7 @@ class AppInput {
       ".gitignore",
       "rollup.config.js",
       "tsconfig.json",
-      "/src/index.ts",
+      "src/index.ts",
     ];
 
     logger.log("\nfiles:\n");
@@ -96,7 +96,7 @@ class AppInput {
       ".gitignore",
       "rollup.config.js",
       "tsconfig.json",
-      "/src/index.ts",
+      "src/index.ts",
     ];
 
     logger.log("\nfiles:\n");
@@ -144,11 +144,11 @@ class AppInput {
         chalk.green(`✅ Project "${this.packageName}" created successfully 🎉`)
       );
     } catch (error) {
-      Spinner.stop(chalk.red("❌ Something went wrong."));
+      Spinner.stop(chalk.red("❌ Something went wrong.", error.message));
       log.error(chalk.red(`▲ Error: ${error}`));
       process.exit(1);
     }
   }
 }
 
-export const createPackage = new AppInput();
+export const createPackage = new AppInput().init();

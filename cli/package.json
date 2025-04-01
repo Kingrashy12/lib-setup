@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A lightweight CLI tool for setting up starter files and configurations for a Rollup-based package.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "null"
   },
@@ -15,6 +16,7 @@
     "package"
   ],
   "license": "MIT",
+  "bin": "./src/create.js",
   "bugs": {
     "url": "https://github.com/Kingrashy12/lib-setup/issues"
   },
