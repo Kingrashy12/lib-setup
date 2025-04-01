@@ -7,6 +7,8 @@ import del from "rollup-plugin-delete";
 import { readFileSync } from "fs";
 import { visualizer } from "rollup-plugin-visualizer";
 import esbuild from "rollup-plugin-esbuild";
+import json from "@rollup/plugin-json";
+
 const pkg = JSON.parse(
   readFileSync(new URL("./package.json", import.meta.url), "utf8")
 );
@@ -33,6 +35,7 @@ export default {
     resolve(),
     PeerDepsExternalPlugin(),
     commonjs(),
+    json(),
     typescript({
       tsconfig: "./tsconfig.json",
       outputToFilesystem: true,
