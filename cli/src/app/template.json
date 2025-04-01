@@ -1,0 +1,13 @@
+{
+  "common": {
+    "gitignore": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/common/.gitignore",
+    "package": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/common/package.json",
+    "rollup-config": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/common/rollup.config.js",
+    "tsconfig": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/common/tsconfig.json"
+  },
+  "react": {
+    "package": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/react/package.json",
+    "rollup-config": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/react/rollup.config.js",
+    "tsconfig": "https://raw.githubusercontent.com/Kingrashy12/lib-setup/main/starter/react/tsconfig.json"
+  }
+}

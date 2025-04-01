@@ -1,7 +1,7 @@
 {
-  "name": "lib-starter",
+  "name": "your-package-name",
   "version": "0.1.0",
-  "description": "",
+  "description": "A modern JavaScript library built with Rollup.",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
